@@ -28,7 +28,6 @@ func New() *libcontainer.Container {
 		Namespaces: libcontainer.Namespaces{
 			libcontainer.GetNamespace("NEWNS"),
 			libcontainer.GetNamespace("NEWUTS"),
-			libcontainer.GetNamespace("NEWIPC"),
 			libcontainer.GetNamespace("NEWPID"),
 			libcontainer.GetNamespace("NEWNET"),
 		},
